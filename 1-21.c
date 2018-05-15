@@ -29,9 +29,9 @@ int entab(char str[])
       if(c == ' ')
 	  ++ctr;
 
-      if(ctr == 3)
+      if(ctr == NUMCOL)
 	{
-	  i -= 2;
+	  i -= NUMCOL-1;
 	  str[i] = '\t';
 	  ctr = 0;
 	}
@@ -46,3 +46,4 @@ int entab(char str[])
 
   return i;
 }
+
