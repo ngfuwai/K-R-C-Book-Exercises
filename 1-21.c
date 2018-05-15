@@ -21,7 +21,7 @@ int main()
 
 int entab(char str[])
 {
-  int i = ctr = 0;
+  int i = 0, ctr = 0;
   char c;
 
   while(i < MAXLINE - 1 && (c = getchar()) != EOF)
